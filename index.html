@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <title>Tip Calculator App</title>
+</head>
+
+<body>
+    <section>
+        <img src="./Asstets/logo.svg" class="page-logo" />
+        <div class="calculator-container">
+            <form>
+                <!-- Bill field -->
+                <div class="label-container">
+                    <label for="amount" class="standard-label">Bill</label>
+                    <p class="standard-input-error amount-input-error">Can't be zero</p>
+                </div>
+                <div class="input-container">
+                    <input id="amount" type="number" class="standard-input" name="amount" placeholder="0" />
+                    <img src="./Asstets/icon-dollar.svg" class="input-icon-left" />
+                </div>
+                <!-- Tip field -->
+                <label class="standard-label tip-selection">Select Tip %</label>
+                <div class="tip-buttons">
+                    <button class="percentage-button">5%</button>
+                    <button class="percentage-button">10%</button>
+                    <button class="percentage-button">15%</button>
+                    <button class="percentage-button">25%</button>
+                    <button class="percentage-button">50%</button>
+                    <input id="tip" type="number" class="standard-input" placeholder="Custom" />
+                </div>
+                <!-- Nr. of people field -->
+                <label for="number-of-people" class="standard-label people-label">Number of
+                    People</label>
+                <div class="input-container">
+                    <input id="number-of-people" type="number" class="standard-input" />
+                    <img src="./Asstets/icon-person.svg" class="input-icon-left" />
+                </div>
+            </form>
+            <!-- First row -->
+            <div class="results-container">
+                <div class="results-row">
+                    <div>
+                        <h4>Tip Amount</h4>
+                        <p>/ person</p>
+                    </div>
+                    <p>$0.00</p>
+                </div>
+                <!-- Second row -->
+                <div class="results-row">
+                    <div>
+                        <h4>Total</h4>
+                        <p>/ person</p>
+                    </div>
+                    <p>$0.00</p>
+                </div>
+                <!-- Reset button -->
+                <button disabled="true" class="reset-button">RESET</button>
+                <!-- Calculate -->
+                <button type="submit" class="calculate-button">CALCULATE</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
