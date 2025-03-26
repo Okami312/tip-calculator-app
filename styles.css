@@ -155,7 +155,7 @@ section {
 }
 
 .results-row p {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 700;
   color: var(--green-400);
 }
@@ -194,4 +194,53 @@ section {
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .calculator-container {
+    max-width: 920px;
+    border-radius: 25px;
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: content-box;
+  }
+
+  form {
+    max-width: 380px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .results-container {
+    height: 400px;
+    width: 413px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: content-box;
+  }
+
+  .results-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 333px;
+  }
+
+  .results-row:first-of-type {
+    margin-bottom: 42px;
+  }
+
+  .results-row:last-of-type {
+    margin-bottom: 113px;
+  }
+
+  .reset-button,
+  .calculate-button {
+    display: block;
+    width: 333px;
+  }
 }
