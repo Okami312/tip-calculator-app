@@ -29,18 +29,18 @@
                 <!-- Tip field -->
                 <label class="standard-label tip-selection">Select Tip %</label>
                 <div class="tip-buttons select-tip">
-                    <button class="percentage-button">5%</button>
-                    <button class="percentage-button">10%</button>
-                    <button class="percentage-button">15%</button>
-                    <button class="percentage-button">25%</button>
-                    <button class="percentage-button">50%</button>
-                    <input id="tip" type="number" class="standard-input" placeholder="Custom" />
+                    <button class="percentage-button" type="button" value="5">5%</button>
+                    <button class="percentage-button" type="button" value="10">10%</button>
+                    <button class="percentage-button" type="button" value="15">15%</button>
+                    <button class="percentage-button" type="button" value="25">25%</button>
+                    <button class="percentage-button" type="button" value="50">50%</button>
+                    <input id="tip" type="number" class="standard-input custom-tip-input" placeholder="Custom" />
                 </div>
                 <!-- Nr. of people field -->
                 <label for="number-of-people" class="standard-label people-label">Number of
                     People</label>
                 <div class="input-container">
-                    <input id="number-of-people" type="number" class="standard-input" />
+                    <input id="number-of-people" type="number" class="standard-input" name="number-of-people" />
                     <img src="./Asstets/icon-person.svg" class="input-icon-left" />
                 </div>
             </form>
@@ -59,10 +59,10 @@
                         <h4>Total</h4>
                         <p>/ person</p>
                     </div>
-                    <p>$0.00</p>
+                    <p class="total-per-person-element">$0.00</p>
                 </div>
                 <!-- Reset button -->
-                <button disabled="true" class="reset-button">RESET</button>
+                <button disabled class="reset-button">RESET</button>
                 <!-- Calculate -->
                 <button type="submit" class="calculate-button">CALCULATE</button>
             </div>
