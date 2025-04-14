@@ -140,7 +140,7 @@ section {
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
-  text-align: right;
+  text-align: center;
   box-sizing: border-box;
   background-color: var(--grey-50);
   color: var(--grey-900);
@@ -283,18 +283,39 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .results-container {
-    flex: 1;
-  }
-
   .standard-input-error {
     color: #e17457;
     font-weight: 700;
     display: none;
     margin-bottom: 0px;
     position: relative;
-    left: 206px;
+    left: 196px;
     bottom: 24px;
+  }
+
+  .amount-input-error {
+    color: #e17457;
+    font-weight: 700;
+    display: none;
+    margin-bottom: 0px;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+  }
+
+  .custom-tip-input {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: var(--grey-50);
+    color: var(--grey-900);
+    border: 2px solid var(--grey-50);
+    border-radius: 5px;
+    width: 100%;
+    padding: 6px 10px 6px 10px;
+    outline: none;
   }
 }
 
@@ -317,11 +338,29 @@ section {
     margin-left: auto;
   }
 
+  .standard-input-error {
+    color: #e17457;
+    font-weight: 700;
+    display: none;
+    margin-bottom: 0px;
+    position: relative;
+    left: 252px;
+    bottom: 24px;
+  }
+
+  .amount-input-error {
+    color: #e17457;
+    font-weight: 700;
+    display: none;
+    margin-bottom: 0px;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+  }
+
   .results-container {
-    height: 400px;
+    height: 417px;
     width: 413px;
-    margin-right: auto;
-    margin-left: auto;
     box-sizing: content-box;
   }
 
@@ -333,16 +372,18 @@ section {
   }
 
   .results-row:first-of-type {
-    margin-bottom: 42px;
+    margin-bottom: 22px;
   }
 
   .results-row:last-of-type {
-    margin-bottom: 113px;
+    margin-bottom: 200px;
   }
 
   .reset-button,
   .calculate-button {
     display: block;
-    width: 333px;
+    width: 378px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

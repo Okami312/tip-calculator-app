@@ -19,9 +19,11 @@ const handleFormSubmit = (e) => {
   const amount = Number(data.get("amount"));
   if (amount <= 0) {
     amountInputError.classList.remove("hide");
+    amountInputError.style.display = "block";
     numberOfErrors++;
   } else {
     amountInputError.classList.add("hide");
+    amountInputError.style.display = "none";
   }
 
   // tip
