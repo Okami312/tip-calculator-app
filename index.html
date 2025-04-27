@@ -18,6 +18,7 @@
 
     <div class="calculator-container">
       <form>
+
         <!-- Bill field -->
         <div>
           <div class="label-container">
@@ -54,7 +55,8 @@
             Can't be zero
           </p>
           <div class="input-container">
-            <input id="number-of-people" type="number" class="standard-input" name="number-of-people" />
+            <input id="number-of-people" type="number" class="standard-input number-of-people-input"
+              name="number-of-people" />
             <img class="input-icon-left" src="./assets/icon-person.svg" />
           </div>
         </div>
@@ -70,7 +72,7 @@
             <h4>Tip Amount</h4>
             <p>/ person</p>
           </div>
-          <p>$0.00</p>
+          <p class="amount-total-paragraph">$0.00</p>
         </div>
 
         <!-- Second row -->
@@ -108,24 +110,25 @@
 
     <!-- Statistics -->
     <div class="statistics-container">
-      <div>
-        <p class="average-bill">$0.00</p>
-        <h3>Average Bill</h3>
+      <div class="stats-title">
+        <h3>Average Bill:</h3>
+        <p class="average-bill stats-price-color">$0.00</p>
       </div>
-      <div>
-        <p>$0.00</p>
-        <h3>Average Tip</h3>
+      <div class="stats-title">
+        <h3>Average Tip:</h3>
+        <p class="average-tip stats-price-color">$0.00</p>
       </div>
-      <div>
-        <p>$0.00</p>
-        <h3>The most expensive</h3>
+      <div class="stats-title">
+        <h3>The most expensive:</h3>
+        <p class="most-highest-price stats-price-color">$0.00</p>
       </div>
     </div>
   </section>
-  <script src="./script.js"></script>
+  <script src="./calculator-app.js"></script>
+  <!-- <script src="./script.js"></script>
   <script src="./history.js"></script>
   <script src="./stats.js"></script>
-  <script src="./utils.js"></script>
+  <script src="./utils.js"></script> -->
 </body>
 
 </html>
